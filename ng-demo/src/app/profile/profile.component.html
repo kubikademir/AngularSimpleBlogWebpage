@@ -1,0 +1,20 @@
+
+
+<div class="row">
+    <div class="side">
+      <app-search-user (onSearch)="searchProfile($event)"></app-search-user>
+      <div *ngFor="let user of Users">
+
+      <h6 *ngIf="searchId == user.id">
+        <tr><h5><b>Username&#10160; <b style="color: cadetblue;">{{ user.username }}</b></b></h5></tr>
+        <tr><h5><b>Country&#10160; <b style="color: cadetblue;">{{ user.location }}</b></b></h5></tr>
+        <tr><h5><b>Age&#10160; <b style="color: cadetblue;">{{ user.age }}</b></b></h5></tr>
+        <tr><h5><b>ID&#10160;<b style="color: cadetblue;"> {{ user.id }}</b></b></h5></tr>
+        <br>
+    <div style="height:200px;">
+      <tr><img src = "{{user.photo}}"></tr>
+    </div>
+      </h6>
+  
+    </div>
+</div>

@@ -1,0 +1,242 @@
+.mv-svg-title{
+  width:600px;
+
+
+  .text-path{
+
+
+    fill-opacity: 0;
+    stroke:url(#gradation-1);
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  .button1{
+    background-color: #333;
+     border-radius: 0; 
+     height:65px;
+  }
+
+.button1:hover{
+  opacity: 0.7;
+}
+
+
+  .text-path{
+    $nth:1;
+    $delay:0;
+    stroke-width: 0.25mm;
+    @while $nth <= 10{
+      &:nth-child(#{$nth}){
+        animation:dash1 3.7s linear forwards;
+        animation-delay:#{$delay}s;
+        stroke-dasharray:800;
+        stroke-dashoffset:800;
+        animation-iteration-count:initial;
+      }
+      $nth:$nth+1;
+      $delay:$delay+0.1;
+      
+      
+    }
+
+    $nth:11;
+    $delay:0;
+    @while $nth <= 36{
+      &:nth-child(#{$nth}){
+        animation:dash1_en 3.7s linear forwards;
+        animation-delay:#{$delay}s;
+        stroke-dasharray:200;
+        animation-iteration-count:initial;    
+      }
+      $nth:$nth+1;
+      $delay:$delay+0.04;
+
+    }
+  }
+ 
+
+  @keyframes dash1{
+       0%{ stroke-dashoffset:800; stroke-width:3px; }
+      50%{ stroke-dashoffset:1500; stroke-width:0.1px; }
+    50.1%{ stroke-dashoffset:800; }
+      80%{ stroke-width:2px; fill:#333; fill: opacity 1px;; }
+     100%{ stroke-dashoffset:0; stroke: #333; stroke-width:0; fill:#333; fill-opacity:1; stroke-dasharray:400; }
+  }
+  @keyframes dash1_en{
+    0%{ stroke-dashoffset:200; stroke-width:2px; }
+   50%{ stroke-dashoffset:400; stroke-width:0.1px; }
+ 50.1%{ stroke-dashoffset:200; }
+   80%{ stroke-width:1px; fill:#333; fill-opacity:1px; }
+  100%{ stroke-dashoffset:0; stroke: #333; stroke-width:0; fill:#333; fill-opacity:1;}
+}
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 99.8vw;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.loopDiv {
+  text-align: left;
+}
+
+.header {
+  padding: 10%;
+  text-align:center;
+  background: cadetblue;
+  color: white;
+}
+
+.combutton {
+  border-width: 0%;
+  border-color: transparent;
+  color: white;
+  background-color: transparent;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+
+.navbar2 {
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: cadetblue;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+  color: cadetblue;
+}
+
+.navbar a:hover {
+
+  background-color: #333;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 27%;
+  background-color: #ddd;
+  padding: 2%;
+  color: #333;
+}
+
+.main {
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.postdiv {
+  background-color: #ddd;
+  width: 100%;
+  height: 50%;
+  padding-left: 100px;
+  padding: 20px;
+  border-color: #333;
+  color: cadetblue;
+  border-style: solid;
+  border-width: 2x;
+  box-shadow: 2px 0 4px 2px #434343;
+  opacity: 0.9;
+  transition: 0.7s;
+}
+
+.postdiv:hover {
+  background-color: cadetblue;
+  border-color: #333;
+  color: #333;
+  opacity: 1;
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 2px) rotate(0deg); }
+  50% { transform: translate(0px, -2px) rotate(0deg); }
+  100% { transform: translate(0px, 2px) rotate(0deg); }
+ 
+}
+
+
+.footer {
+  padding: 2px;
+  background: #333;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.paging{
+  color: white;
+  margin: auto;
+}
+
+
+
+.button {
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  padding: 6px 25px;
+  text-decoration: none;
+  height: 40px;
+}
+
+.activebutton {
+  background: cadetblue;
+  color: #ffffff;
+  text-shadow: 0 px 0 #333;
+}
+
+input[type="number"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+  right: 100%;
+}

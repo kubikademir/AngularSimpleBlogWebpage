@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "username": "Bret",
+    "location": "Germany",
+    "age": 24,
+    "photo": "https://i.ibb.co/590CLzj/bret.jpg"
+  },
+  
+  {
+    "id": 2,
+    "username": "Antonette",
+    "location": "Spain",
+    "age": 32,
+    "photo": "https://i.ibb.co/0JVp0Pw/antonette.jpg"
+  },
+
+  {
+    "id": 3,
+    "username": "Samantha",
+    "location": "Albania",
+    "age": 18,
+    "photo": "https://i.ibb.co/58kQfyr/samatha.jpg"
+  },
+
+  {
+    "id": 4,
+    "username": "Karianne",
+    "location": "Finland",
+    "age": 22,
+    "photo": "https://i.ibb.co/920P6s1/karianne.jpg"
+  },
+
+  {
+    "id": 5,
+    "username": "Kamren",
+    "location": "Greece",
+    "age": 35,
+    "photo": "https://i.ibb.co/gdQJCVk/kamren.jpg"
+  },
+
+  {
+    "id": 6,
+    "username": "Leopoldo",
+    "location": "Egypt",
+    "age": 27,
+    "photo": "https://i.ibb.co/zNZnyj8/leopolo.jpg"
+  },
+
+  {
+    "id": 7,
+    "username": "Elwyn",
+    "location": "Norway",
+    "age": 29,
+    "photo": "https://i.ibb.co/QknYmgm/elwyn.jpg"
+  },
+
+  {
+    "id": 8,
+    "username": "Maxime",
+    "location": "United States",
+    "age": 32,
+    "photo": "https://i.ibb.co/qWMRx6y/maxime.jpg"
+  },
+
+  {
+    "id": 9,
+    "username": "Delphine",
+    "location": "Netherland",
+    "age": 19,
+    "photo": "https://i.ibb.co/jfDgpQT/delphine.jpg"
+  },
+
+  {
+    "id": 10,
+    "username": "Moriah",
+    "location": "Bulgaria",
+    "age": 21,
+    "photo": "https://i.ibb.co/ykbxq6V/moriah.jpg"
+  }
+]
